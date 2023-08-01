@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
     <!-- Title -->
     <TextView
         android:id="@+id/todoTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#00008B"
         android:text="To-Do List"
-        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
     <!-- Add New To-Do Item -->
@@ -23,14 +25,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="Enter your to-do item" />
+        android:background="#ffffff"
+        android:hint="Enter your to-do item"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#333333"
+        android:textColorHint="@color/black" />
+
 
     <!-- Add Button -->
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="#00008B"
+        android:text="Add"
+        android:textColor="@color/white" />
 
     <!-- To-Do List -->
     <ListView
@@ -38,8 +51,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:longClickable="true" /> <!-- Set the ListView to be long clickable -->
-
-
+        android:divider="@color/black"
+        android:longClickable="true"
+        />
 
 </LinearLayout>

@@ -4,10 +4,12 @@
     tools:ignore="ExtraText">
     <!-- Context Menu -->
 
-        <item
-            android:id="@+id/menu_delete"
-            android:title="Delete"
-            android:orderInCategory="100"
-            android:icon="@android:drawable/ic_delete"
-            />
+    <item
+        android:id="@+id/menu_delete"
+        android:title="Delete"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_delete"
+        android:titleTextColor="#00008B"
+        android:background="#00008B"
+        />
 </menu>
